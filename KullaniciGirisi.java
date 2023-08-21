@@ -17,7 +17,7 @@ public class KullaniciGirisi {
         //tüm bilgilerimiz doğruysa hatasız giriştir.
         if (userName.equals("patika") && password.equals("java123")) {
             System.out.print("Giriş İşlemi Başarılı!");
-            //tüm bilgiler yanlış olduğu olasılığı.
+            //tüm bilgiler yanlış olduğu olasılığında.
         } else if (!(userName.equals("patika")) && !(password.equals("java123"))) {
             System.out.println("Kullanıcı Adı ve Şifre Hatalıdır!Lütfen Bilgileri Kontrol Edip Tekrar Deneyiniz. ");
             //kullanıcı adının yanlış olduğu olasılığında.
@@ -31,7 +31,7 @@ public class KullaniciGirisi {
             System.out.println(" Seçiminiz: ");
             select = inp.nextLine();
 
-            // yaptıgı seçime göre yönlendiriyoruz.
+            // yapılan seçime göre yönlendiriyoruz.
 
             if (select.equals("E") || select.equals("e")) {
                 System.out.println("Yeni Şifre Giriniz .(Lütfen Daha Önceki Şifrelerinizden Farklı Bir Şifre Oluşturunuz):");
@@ -42,7 +42,7 @@ public class KullaniciGirisi {
                     System.out.print("Yeni Şifreniz Başarı İle Oluşturuldu.");
                     // şifre hatalı şekilde değiştirilmeye çalışılırsa
                 } else {
-                    System.out.print("Hatalı Deneme! Yeni Şifre Eskisiyle Aynı Olamaz. Tekrar Deneyiniz");
+                    System.out.print("Hatalı Deneme! Yeni Şifre Eskisiyle Aynı Olamaz. Lütfen Tekrar Deneyiniz");
                 }
                 // kullanınıcı şifreyi degiştirmek istenmezse
             } else if (select.equals("H") || select.equals("h")) {
